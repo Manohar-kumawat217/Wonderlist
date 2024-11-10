@@ -1,0 +1,167 @@
+/* body */
+body {
+  font-family: "Plus Jakarta Sans", "sans-serif" !important;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  flex: 1;
+  width: 100%;
+}
+
+/* Navbar */
+
+.navbar {
+  height: 5rem !important;
+  background-color: white;
+}
+
+.fa-compass {
+  color: #fe424d;
+  font-size: 2.5rem;
+}
+
+.navbar-nav .header-word {
+  background: linear-gradient(to left, #fe424d, #e70a71, #7103e6);
+  content: "";
+  color: transparent !important;
+  background-clip: text;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.nav-link {
+  color: #222222 !important;
+}
+
+.icon {
+  margin-left: 2rem;
+}
+
+.nav-right-options {
+  width: 40rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-right: 5rem;
+}
+
+.listings {
+  margin-top: 3rem !important;
+}
+
+/* Footer */
+
+.f-info-links a {
+  text-decoration: none;
+  color: #222222;
+}
+
+.f-info-links:hover {
+  text-decoration: underline;
+}
+
+.f-info-links,
+.f-info-socials,
+.f-info-brand {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.f-info {
+  text-align: center;
+}
+.f-info {
+  height: 8rem;
+  background-color: #ebebeb;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: space-evenly;
+}
+.f-info-socials {
+  font-size: 1.5rem;
+}
+.f-info-socials i {
+  margin-right: 1rem;
+}
+
+/* card */
+
+.listing-card {
+  border: none !important;
+  margin-bottom: 2rem;
+}
+
+.listing-link {
+  text-decoration: none;
+}
+
+.card-img-top {
+  border-radius: 1rem !important;
+  width: 100% !important;
+  object-fit: cover !important;
+}
+
+.card-body {
+  padding: 0 !important;
+}
+
+.card-text p {
+  font-weight: 400 !important;
+}
+
+/* Overlay Effect on cards */
+
+.card-img-overlay {
+  opacity: 0;
+}
+
+.card-img-overlay:hover {
+  opacity: 0.2;
+  background-color: white;
+}
+
+/* new.ejs */
+
+.add-btn {
+  background-color: #fe424d !important;
+  border: none !important;
+}
+
+/* edit.ejs */
+
+.edit-btn {
+  background-color: #fe424d !important;
+  border: none !important;
+}
+
+/* show.ejs */
+
+.show-img {
+  height: 40vh;
+}
+
+.btns {
+  display: flex;
+}
+
+.show-card {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.tax-info {
+  display: none;
+}
+.tax-toggle {
+  height: 3.2rem;
+  padding: 1rem;
+  margin-left: 2.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.335);
+  border-radius: 0.7rem;
+  display: flex;
+  align-items: center;
+}
