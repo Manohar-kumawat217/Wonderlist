@@ -35,18 +35,12 @@ body {
   color: #222222 !important;
 }
 
-.icon {
-  margin-left: 1rem;
-}
-
 .nav-right-options {
-  width: 40rem;
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-right: 5rem;
-}
 
+  align-items: center;
+  justify-content: space-evenly;
+}
 .listings {
   margin-top: 3rem !important;
 }
@@ -136,16 +130,47 @@ body {
 .edit-btn {
   background-color: #fe424d !important;
   border: none !important;
+  height: 2.5rem !important;
+  width: 5.3rem !important;
+  margin-left: 1rem;
+}
+.deletebtn {
+  background-color: #1c1c1c !important;
+  border: none !important;
+  height: 2.5rem !important;
+  width: 5.3rem !important;
+  margin-left: 1rem;
 }
 
 /* show.ejs */
 
 .show-img {
-  height: 40vh;
+  height: 50vh;
+  margin-left: -1rem !important;
 }
 
+.show-listing {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  width: 50rem;
+}
+.show-title {
+  width: 25rem;
+}
+.show-title h2 {
+  width: 26rem !important;
+}
+.card-body-show {
+  width: 25rem;
+  margin-right: 1rem;
+}
 .btns {
   display: flex;
+}
+
+.show-edit-btn {
+  background-color: #fe424d !important;
 }
 
 .show-card {
@@ -158,10 +183,166 @@ body {
 }
 .tax-toggle {
   height: 3.2rem;
-  padding: 1rem;
+  padding: 1.5rem;
   margin-left: 2.5rem;
   border: 1px solid rgba(0, 0, 0, 0.335);
   border-radius: 0.7rem;
   display: flex;
   align-items: center;
+}
+
+.navbar-brand-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (width <= 768px) {
+  .nav-right-options {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1.25rem;
+    position: sticky;
+  }
+  .tax-toggle {
+    border: none;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+  }
+  .login-form {
+    width: 100%;
+    align-items: center;
+  }
+  .user-loginfo {
+    width: 120%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .listings {
+    text-align: center;
+  }
+  .card-img-top {
+    height: 15rem !important;
+  }
+  .show-page {
+    text-align: center;
+  }
+  .rating {
+    display: flex !important;
+  }
+  .show-title {
+    text-align: center;
+  }
+  .show-img {
+    height: 15rem !important;
+    margin-left: 0.25rem !important;
+  }
+}
+@media (width <= 840px) {
+  .tax-toggle {
+    text-align: center;
+    width: 20rem;
+    margin-left: 0px;
+  }
+  .nav-right-options a {
+    text-align: center;
+  }
+
+  .show-page {
+    text-align: center;
+    display: flex;
+  }
+  .show-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .show-img {
+    height: 20rem !important;
+    width: 30rem !important;
+    align-self: center !important;
+  }
+
+  .show-listing {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 50rem;
+  }
+  .show-title {
+    width: 25rem;
+    text-align: start;
+    margin-top: 0px !important;
+  }
+  .card-body-show {
+    width: 25rem;
+    margin-right: 1rem;
+  }
+  .btns {
+    display: flex;
+    width: 26.5rem !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem !important;
+  }
+
+  .show-card {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .rating {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .review-class {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .review-class div {
+    margin: 0px !important;
+    width: 100%;
+    margin-bottom: 1rem !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btns a,
+  .deletebtn {
+    width: 10rem !important;
+    margin-left: 0rem !important;
+  }
+  .deletebtn {
+    margin-top: 1rem;
+  }
+}
+
+@media (width <= 995px) {
+  .btns {
+    display: flex;
+    justify-content: end;
+    margin-right: 3rem;
+  }
+  .show-title {
+    margin-top: 3.5rem;
+  }
+}
+
+@media (width <=550px) {
+  .show-img {
+    height: 15rem !important;
+    width: 25rem !important;
+    align-self: center !important;
+  }
 }
